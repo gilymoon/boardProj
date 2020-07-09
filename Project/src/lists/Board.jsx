@@ -6,6 +6,7 @@ import { connect } from "react-redux";
 import { flightListSelector } from "./flight.selector.js";
 import qs from "qs";
 import FlightLists from "./FlightLists";
+import PropTypes from "prop-types";
 
 function Board({ getFlightList, flights }) {
   useEffect(() => {
@@ -76,6 +77,12 @@ function Board({ getFlightList, flights }) {
     </>
   );
 }
+
+Board.propTypes = {
+  flights: PropTypes.shape().isRequired,
+  getFlightList: PropTypes.func.isRequired,
+};
+
 const mapState = (state) => {
   return {
     flights: flightListSelector(state),

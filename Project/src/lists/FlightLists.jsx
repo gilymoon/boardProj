@@ -2,7 +2,6 @@ import React from "react";
 import moment from "moment";
 
 const FlightLists = ({ flights, direction }) => {
-  console.log(direction);
   return flights.map((flight) => {
     return (
       <div key={flight.ID} className="list">

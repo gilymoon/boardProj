@@ -1,7 +1,7 @@
 import React from "react";
 import Header from "./header/Header";
 import Searcher from "./searcher/Searcher";
-import { BrowserRouter, Switch, Route, Link, Redirect } from "react-router-dom";
+import { Switch, Route, Redirect } from "react-router-dom";
 import Board from "./lists/Board";
 
 const App = () => (

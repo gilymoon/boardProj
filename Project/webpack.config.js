@@ -32,7 +32,12 @@ module.exports = (env, argv) => {
       new CleanWebpackPlugin(),
       new HtmlWebpackPlugin({
         template: "./src/index.html"
-      })
+      }),
+      new CopyPlugin({
+        patterns: [
+          { from: '_redirects', to: '' },
+        ],
+      }),
     ],
     resolve: {
       extensions: [".js", ".jsx"]

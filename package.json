@@ -5,7 +5,8 @@
   "main": "webpack.config.js",
   "scripts": {
     "start": "webpack-dev-server -d --devtool eval-source-maps --open",
-    "build": "webpack -p"
+    "build": "webpack -p",
+    "lint": "eslint src"
   },
   "keywords": [],
   "author": "",
@@ -27,7 +28,7 @@
     "eslint-config-prettier": "^6.11.0",
     "eslint-plugin-import": "^2.22.0",
     "eslint-plugin-jsx-a11y": "^6.2.3",
-    "eslint-plugin-react": "^7.19.0",
+    "eslint-plugin-react": "^7.20.3",
     "eslint-plugin-react-hooks": "^4.0.6",
     "eslint-plugin-react-redux": "^3.0.3",
     "html-webpack-plugin": "^4.2.0",

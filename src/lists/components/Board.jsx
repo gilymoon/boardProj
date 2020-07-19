@@ -1,9 +1,9 @@
 import React, { useEffect } from "react";
 import { Link, useParams, useLocation } from "react-router-dom";
 import moment from "moment";
-import * as flightActions from "./flight.actions";
+import * as flightActions from "../flight.actions";
 import { connect } from "react-redux";
-import { flightListSelector } from "./flight.selector.js";
+import { flightListSelector } from "../flight.selector.js";
 import qs from "qs";
 import FlightLists from "./FlightLists";
 import PropTypes from "prop-types";

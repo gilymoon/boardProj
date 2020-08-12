@@ -2,7 +2,7 @@ import React from "react";
 import Header from "./header/Header";
 import Searcher from "./searcher/Searcher";
 import { Switch, Route, Redirect } from "react-router-dom";
-import Board from "./lists/components/Board";
+import Board from "./flights/components/Board";
 
 const App = () => (
   <div className="Page">

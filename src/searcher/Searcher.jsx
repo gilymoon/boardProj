@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import { useLocation } from "react-router-dom";
 import { Link } from "react-router-dom";
+import "./searcher.scss"
 
 const Searcher = () => {
   const location = useLocation();
@@ -17,7 +18,7 @@ const Searcher = () => {
         type="text"
         placeholder="Airline, destination or flight #"
         onChange={(event) => setSearch(event.target.value)}
-      ></input>
+      />
       <Link to={`${location.pathname}?search=${search}`}>
         <button className="searcher__button">Search</button>
       </Link>

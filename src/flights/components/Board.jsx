@@ -7,6 +7,7 @@ import { flightListSelector } from "../flight.selector.js";
 import qs from "qs";
 import FlightLists from "./FlightLists";
 import PropTypes from "prop-types";
+import "./board.scss";
 
 function Board({ getFlightList, flights }) {
   useEffect(() => {

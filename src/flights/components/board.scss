@@ -1,0 +1,100 @@
+.routes {
+  display: flex;
+  width: 90vw;
+  margin: 0;
+  margin: auto;
+  &__arrival {
+    position: relative;
+    height: 70px;
+    width: 50vw;
+    border: none;
+    background-color: #1fb7ee;
+    border-radius: 70px 70px 0 0;
+    color: #fff;
+    font-size: 20px;
+    font-weight: 500;
+    transition: all 0.4s ease;
+    &_selected {
+      background-color: #fff;
+      position: relative;
+      height: 70px;
+      width: 50vw;
+      border: none;
+      border-radius: 70px 70px 0 0;
+      color: #1fb7ee;
+      font-size: 20px;
+      font-weight: 500;
+      transition: all 0.4s ease;
+    }
+    &:hover {
+      cursor: pointer;
+    }
+  }
+  &__departure {
+    position: relative;
+    height: 70px;
+    width: 50vw;
+    border: none;
+    background-color: #1fb7ee;
+    border-radius: 70px 70px 0 0;
+    color: #fff;
+    font-size: 20px;
+    font-weight: 500;
+    transition: all 0.4s ease;
+    &_selected {
+      color: #1fb7ee;
+      background-color: #fff;
+      z-index: 1;
+      position: relative;
+      transition: all 0.4s ease;
+      height: 70px;
+      width: 50vw;
+      border: none;
+
+      border-radius: 70px 70px 0 0;
+
+      font-size: 20px;
+      font-weight: 500;
+    }
+    &:hover {
+      cursor: pointer;
+    }
+  }
+}
+
+.routes__departure-link {
+  position: relative;
+}
+
+.routes__arrival-link {
+  position: relative;
+  right: 10vw;
+}
+
+.flights-data {
+  margin: 0;
+
+  width: 90vw;
+  margin: auto;
+  background-color: #fff;
+}
+
+.details {
+  width: 100%;
+  display: flex;
+  color: grey;
+  padding-top: 25px;
+  padding-bottom: 20px;
+  background-color: #fff;
+}
+
+.detail-child {
+  width: 10%;
+  text-align: center;
+  &:nth-child(5) {
+    width: 30%;
+  }
+  &:nth-child(6) {
+    width: 30%;
+  }
+}

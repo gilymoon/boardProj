@@ -1,5 +1,6 @@
 import React from "react";
 import moment from "moment";
+import "./filghtlists.scss";
 
 const FlightLists = ({ flights, direction }) => {
   return flights.map((flight) => {
